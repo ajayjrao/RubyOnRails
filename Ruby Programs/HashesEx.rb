@@ -29,3 +29,12 @@ adjust
 adjust ({:foreground => "green"})
 adjust background: "yellow"
 adjust :background => "magenta"
+
+#directly print a hash w/o assigning to a variable
+#the below stmt gives an error
+#puts {:one =>"one"}
+#work arounds below
+
+puts ({:one => "one"})
+
+puts :one => "one"
